@@ -74,7 +74,7 @@ export const Navbar: React.FC = () => {
       }`}
       onMouseLeave={() => setActiveMega(null)}
     >
-      <div className="container-px mx-auto flex h-20 max-w-7xl items-center justify-between">
+      <div className="container-px mx-auto flex h-20 lg:h-24 max-w-7xl items-center justify-between">
         <Logo />
 
         {/* Desktop Nav */}

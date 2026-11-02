@@ -35,60 +35,79 @@ interface ValveProduct {
 
 const valveCatalog: ValveProduct[] = [
   {
-    id: 'trunnion-ball',
-    category: 'High Pressure Series',
-    title: 'Trunnion Ball',
-    highlight: 'API 6D',
-    highlightColor: 'text-red-600',
-    badgeBg: 'bg-red-500/10 text-red-600 border-red-500/20',
-    subtitle: 'Forged steel high-pressure hydrocarbon & gas transmission isolation.',
-    price: '$ 420 – $ 3,800',
-    priceSubtitle: 'Direct ex-mill price (vs $ 900+ EU stockist)',
-    savingsTag: '38% Cost Advantage',
-    image: '/assets/valve-trunnion-ball.jpg',
-    specs: [
-      { label: 'Rating', value: 'Class 150 – 2500' },
-      { label: 'Body', value: 'ASTM A105 / F316' },
-      { label: 'Sizes', value: '2" to 36" (DN900)' },
-      { label: 'Testing', value: 'API 598 Zero Leakage' }
-    ]
-  },
-  {
-    id: 'knife-gate',
-    category: 'Heavy Slurry Series',
-    title: 'Knife Gate',
-    highlight: 'Slurry Pro',
+    id: 'pneumatic-butterfly',
+    category: 'Rotary Quarter-Turn Series',
+    title: 'Pneumatic Butterfly',
+    highlight: 'Wafer Style',
     highlightColor: 'text-blue-600',
     badgeBg: 'bg-blue-500/10 text-blue-600 border-blue-500/20',
-    subtitle: 'Bi-directional zero-leakage for abrasive cement slurry & mining pulp.',
-    price: '$ 280 – $ 2,100',
-    priceSubtitle: 'Direct ex-mill price (vs $ 650+ EU stockist)',
+    subtitle: 'ALIS pneumatic actuator wafer butterfly valve with CF8 disc and resilient seat.',
+    price: '$ 180 – $ 1,450',
+    priceSubtitle: 'Direct ex-mill price (vs $ 380+ EU stockist)',
     savingsTag: '42% Cost Advantage',
-    image: '/assets/valve-knife-gate.jpg',
+    image: '/assets/aistudio/17_38e28135.png',
     specs: [
-      { label: 'Rating', value: 'PN 10 – PN 25 / 150#' },
-      { label: 'Blade', value: 'AISI 316 / Duplex' },
-      { label: 'Sizes', value: '2" to 48" (DN1200)' },
-      { label: 'Service', value: 'Cement / Mining / Ash' }
+      { label: 'Rating', value: 'PN 16 / Class 150' },
+      { label: 'Disc', value: 'CF8 Stainless Steel' },
+      { label: 'Sizes', value: 'DN40 to DN600' },
+      { label: 'Testing', value: 'ISO 5208 Rate A' }
     ]
   },
   {
-    id: 'control-globe',
-    category: 'Precision Control Series',
-    title: 'Globe Control',
-    highlight: 'Smart Flow',
+    id: 'pneumatic-3pc-ball',
+    category: 'High Pressure Series',
+    title: 'Pneumatic 3-Pc Ball',
+    highlight: '2000 WOG',
     highlightColor: 'text-amber-600',
     badgeBg: 'bg-amber-500/10 text-amber-600 border-amber-500/20',
-    subtitle: 'Pneumatic diaphragm throttling with dual-gauge smart positioner.',
-    price: '$ 680 – $ 4,200',
-    priceSubtitle: 'Direct ex-mill price (vs $ 1,400+ EU stockist)',
-    savingsTag: '35% Cost Advantage',
-    image: '/assets/valve-control-globe.jpg',
+    subtitle: '3-Piece stainless steel CF8 ball valve with direct-mount ALIS pneumatic actuator.',
+    price: '$ 120 – $ 890',
+    priceSubtitle: 'Direct ex-mill price (vs $ 290+ EU stockist)',
+    savingsTag: '48% Cost Advantage',
+    image: '/assets/aistudio/12_509d0009.png',
     specs: [
-      { label: 'Rating', value: 'Class 150 – 600' },
-      { label: 'Actuator', value: 'Pneumatic Diaphragm' },
-      { label: 'Sizes', value: '1/2" to 16" (DN400)' },
-      { label: 'Standard', value: 'IEC 60534 / ASME' }
+      { label: 'Rating', value: '2000 WOG / 1000 WOG' },
+      { label: 'Body', value: 'Investment Cast CF8' },
+      { label: 'Sizes', value: '1/2" to 4" (DN15-100)' },
+      { label: 'Seal', value: 'Reinforced PTFE / RPTFE' }
+    ]
+  },
+  {
+    id: 'pneumatic-upvc-ball',
+    category: 'Chemical & Water Series',
+    title: 'Pneumatic UPVC Ball',
+    highlight: 'Anti-Corrosion',
+    highlightColor: 'text-emerald-600',
+    badgeBg: 'bg-emerald-500/10 text-emerald-600 border-emerald-500/20',
+    subtitle: 'True union UPVC ball valve with pneumatic actuator for acid, alkaline and brine lines.',
+    price: '$ 95 – $ 620',
+    priceSubtitle: 'Direct ex-mill price (vs $ 220+ EU stockist)',
+    savingsTag: '50% Cost Advantage',
+    image: '/assets/aistudio/9_7adeaebf.png',
+    specs: [
+      { label: 'Rating', value: '235 PSI / PN 16' },
+      { label: 'Body', value: 'Virgin U-PVC Resin' },
+      { label: 'Sizes', value: 'DN15 to DN100 (1/2" - 4")' },
+      { label: 'Connection', value: 'Socket / Threaded Union' }
+    ]
+  },
+  {
+    id: 'electric-globe-control',
+    category: 'Precision Control Series',
+    title: 'Electric Globe Control',
+    highlight: 'Smart Actuator',
+    highlightColor: 'text-indigo-600',
+    badgeBg: 'bg-indigo-500/10 text-indigo-600 border-indigo-500/20',
+    subtitle: 'Intelligent electric modulating globe control valve with LCD digital positioner.',
+    price: '$ 750 – $ 4,800',
+    priceSubtitle: 'Direct ex-mill price (vs $ 1,650+ EU stockist)',
+    savingsTag: '39% Cost Advantage',
+    image: '/assets/aistudio/25_3bdc4503.png',
+    specs: [
+      { label: 'Rating', value: 'DN250 • PN 25 / Class 150' },
+      { label: 'Actuator', value: 'Intelligent Electric 4-20mA' },
+      { label: 'Body', value: 'WCB Cast Carbon Steel' },
+      { label: 'Characteristic', value: 'Equal % / Linear' }
     ]
   }
 ];
