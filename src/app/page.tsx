@@ -21,7 +21,7 @@ import {
 export default function HomePage() {
   return (
     <div>
-      {/* 1. Minimalist Enterprise Hero Section */}
+      {/* 1. Hero Section */}
       <MinimalValveHero />
 
       {/* 2. Trust Strip */}
