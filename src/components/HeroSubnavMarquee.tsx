@@ -22,10 +22,10 @@ const subnavGroups: SubnavGroup[] = [
   {
     label: 'Automation Solutions',
     items: [
-      { name: 'Pneumatic', href: '/products' },
-      { name: 'Electric', href: '/products' },
-      { name: 'Control', href: '/products' },
-      { name: 'Accessories', href: '/products' },
+      { name: 'Pneumatic', href: '/products/actuator' },
+      { name: 'Electric', href: '/products/actuator' },
+      { name: 'Control', href: '/products/control-valve' },
+      { name: 'Accessories', href: '/products/accessories' },
     ],
   },
   {

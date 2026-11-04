@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { productCategories, ProductItem } from '@/data/products';
 import ActuatorModelShowcase from '@/components/products/ActuatorModelShowcase';
+import ActuatorCategoryExperience from '@/components/products/ActuatorCategoryExperience';
 import {
   ArrowLeft,
   ArrowRight,
@@ -58,6 +59,11 @@ export default function ProductDetailPage({ params }: Props) {
 
   if (!product) {
     notFound();
+  }
+
+  // When accessing Actuators category, render the dedicated Alis Valves format category experience
+  if (product.slug === 'actuator') {
+    return <ActuatorCategoryExperience product={product} initialModelId={initialModelId} />;
   }
 
   const hasDetailedModels = Boolean(product.models && product.models.length > 0);
