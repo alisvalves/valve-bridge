@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Section } from '@/components/Section';
 import { CTASection } from '@/components/CTASection';
 import { MinimalValveHero } from '@/components/MinimalValveHero';
+import { HeroSubnavMarquee } from '@/components/HeroSubnavMarquee';
 import { services } from '@/data/services';
 import { industries } from '@/data/industries';
 import { failureModes, processStages, whyValveBridgePoints, valveApplications, whyUsePoints } from '@/data/homeData';
@@ -21,7 +22,10 @@ import {
 export default function HomePage() {
   return (
     <div>
-      {/* 1. Hero Section */}
+      {/* 1. Top Category Marquee Subnav */}
+      <HeroSubnavMarquee />
+
+      {/* 2. Hero Section */}
       <MinimalValveHero />
 
       {/* 2. Trust Strip */}

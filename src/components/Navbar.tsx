@@ -76,8 +76,8 @@ export const Navbar: React.FC = () => {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-card border-b border-border'
-          : 'bg-white/90 backdrop-blur-sm'
+          ? 'bg-[#E2E6EB]/98 backdrop-blur-md shadow-card border-b border-slate-300'
+          : 'bg-[#EAEEF3]/95 backdrop-blur-sm border-b border-slate-300/80'
       }`}
       onMouseLeave={() => setActiveMega(null)}
     >

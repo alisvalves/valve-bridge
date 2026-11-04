@@ -66,7 +66,7 @@ export function MinimalValveHero() {
           {/* Eyebrow Pill */}
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-black/40 backdrop-blur-md border border-white/25 shadow-md mb-6 sm:mb-8 text-xs font-semibold tracking-[0.16em] uppercase text-white">
             <span className="w-2 h-2 rounded-full bg-[#FF8C00] shadow-[0_0_10px_#FF8C00] animate-pulse" />
-            <span>ALIS VALVES & AUTOMATION • CHINA SOURCING CONSULTANCY</span>
+            <span>VALVE BRIDGE • CHINA SOURCING CONSULTANCY</span>
           </div>
 
           {/* Main Headline - Wide, Bold & High Contrast */}
