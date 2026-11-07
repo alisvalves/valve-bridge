@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation';
 import { productCategories, ProductItem } from '@/data/products';
 import ActuatorModelShowcase from '@/components/products/ActuatorModelShowcase';
 import ActuatorCategoryExperience from '@/components/products/ActuatorCategoryExperience';
+import BallValvesCategoryExperience from '@/components/products/BallValvesCategoryExperience';
+import ButterflyValvesCategoryExperience from '@/components/products/ButterflyValvesCategoryExperience';
 import {
   ArrowLeft,
   ArrowRight,
@@ -40,6 +42,12 @@ export async function generateMetadata({ params }: Props) {
     product = productCategories.find((p) => p.slug === 'actuator');
     title = 'Fork Type Pneumatic Actuator Sourcing | Valve Bridge';
     description = 'Scotch Yoke heavy-duty pneumatic actuator for quarter-turn valves. Direct China mill pricing and 100% inspection.';
+  } else if (params.slug === 'ball-valves') {
+    title = 'Industrial Ball Valves | Manual & Pneumatic Actuated (12 Models) | Valve Bridge';
+    description = 'Complete range of 12 industrial ball valves: 3-way, 3-piece, flanged, screwed, lined, sanitary TC end, and cryogenic ball valves with manual and pneumatic actuation.';
+  } else if (params.slug === 'butterfly-valves') {
+    title = 'Industrial Butterfly Valves | Concentric, Flanged, Lugged & Ceramic (12 Models) | Valve Bridge';
+    description = 'Complete range of 12 industrial butterfly valves: concentric wafer, full lug, double flanged, UPVC, spherical powder disc, and extreme abrasion ceramic valves.';
   } else if (product) {
     title = `${product.name} Sourcing & Automation from China | Valve Bridge`;
     description = `${product.tagline}. Direct mill pricing, international standards, and 100% pre-shipment inspection for ${product.name}.`;
@@ -61,9 +69,19 @@ export default function ProductDetailPage({ params }: Props) {
     notFound();
   }
 
-  // When accessing Actuators category, render the dedicated Alis Valves format category experience
+  // When accessing Actuators category, render the dedicated category experience
   if (product.slug === 'actuator') {
     return <ActuatorCategoryExperience product={product} initialModelId={initialModelId} />;
+  }
+
+  // When accessing Ball Valves category, render the dedicated 12-model category experience
+  if (product.slug === 'ball-valves') {
+    return <BallValvesCategoryExperience product={product} initialModelId={initialModelId} />;
+  }
+
+  // When accessing Butterfly Valves category, render the dedicated 12-model category experience
+  if (product.slug === 'butterfly-valves') {
+    return <ButterflyValvesCategoryExperience product={product} initialModelId={initialModelId} />;
   }
 
   const hasDetailedModels = Boolean(product.models && product.models.length > 0);

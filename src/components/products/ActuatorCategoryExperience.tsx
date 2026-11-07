@@ -205,7 +205,7 @@ export default function ActuatorCategoryExperience({ product, initialModelId }: 
             <div className="lg:col-span-8 space-y-5">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal/10 border border-teal/20 text-teal text-xs font-bold uppercase tracking-wider">
                 <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
-                <span>ALIS VALVES AUTOMATION PORTFOLIO • VALVE BRIDGE SOURCING</span>
+                <span>VALVE BRIDGE AUTOMATION PORTFOLIO • SOURCING & AUTOMATION</span>
               </div>
 
               <div>
@@ -669,7 +669,7 @@ export default function ActuatorCategoryExperience({ product, initialModelId }: 
               Industrial Applications &amp; Environments
             </h2>
             <p className="text-sm text-slate-600 mt-1 max-w-2xl">
-              Alis Valves automated packages operate in demanding severe-service environments across global process infrastructure.
+              Valve Bridge automated packages operate in demanding severe-service environments across global process infrastructure.
             </p>
           </div>
 

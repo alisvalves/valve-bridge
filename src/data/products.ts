@@ -118,7 +118,7 @@ export const productCategories: ProductItem[] = [
         rotationOrMotion: 'Rotary 90° ± 5° Adjustable at both ends',
         controlSignal: 'On-Off / 4–20 mA Modulating (Electro-pneumatic Positioner)',
         overview:
-          'Alis Valves Fork Type Pneumatic Actuator is a high-torque pneumatic actuator designed to operate quarter-turn valves such as ball, butterfly, and plug valves. Its Scotch Yoke mechanism converts pneumatic piston movement into high rotary torque, making it suitable for high breakaway-torque and critical valve automation applications.',
+          'Valve Bridge Fork Type Pneumatic Actuator is a high-torque pneumatic actuator designed to operate quarter-turn valves such as ball, butterfly, and plug valves. Its Scotch Yoke mechanism converts pneumatic piston movement into high rotary torque, making it suitable for high breakaway-torque and critical valve automation applications.',
         highlights: [
           'Corrosion Resistant',
           'Leak-Tight Sealing',
@@ -405,40 +405,40 @@ export const productCategories: ProductItem[] = [
     ],
     subTypes: [
       {
-        title: 'Trunnion Mounted Ball Valve',
-        desc: 'Forged 2-piece and 3-piece split body trunnion ball valves engineered for high pressure pipeline isolation with DBB cavity relief.',
+        title: 'Floating Ball Valve',
+        desc: '1-piece, 2-piece, and 3-piece floating ball valves with soft PTFE/RPTFE/PEEK seats for industrial process shut-off.',
       },
       {
-        title: 'Floating Ball Valve',
-        desc: 'Versatile 1-piece, 2-piece, and 3-piece floating ball valves with soft PTFE/RPTFE/PEEK seats for industrial process lines.',
+        title: 'Trunnion Mounted Ball Valve',
+        desc: 'Forged 2-piece and 3-piece split body trunnion ball valves engineered for high pressure pipeline isolation with DBB cavity relief.',
       },
       {
         title: 'Metal Seated Ball Valve',
         desc: 'Stellite / Tungsten Carbide coated metal seats for high temperature service up to 550°C and severe abrasive slurry.',
       },
       {
-        title: 'Cryogenic Ball Valve',
-        desc: 'Extended bonnet design with drip collar for cryogenic LNG, liquid nitrogen and liquid oxygen service down to -196°C.',
+        title: 'Top Entry Ball Valve',
+        desc: 'Monolithic single-piece body allowing complete in-line ball, seat, and stem overhaul without removal from pipeline.',
       },
       {
-        title: 'Ceramic Ball Valve',
-        desc: 'Ultra-hard structural ceramic (Zirconia / Silicon Carbide) ball and seats for extreme erosion, catalyst and ash slurry.',
-      },
-      {
-        title: 'PFA / PTFE Lined Ball Valve',
-        desc: 'Virgin PFA fluoropolymer lined body and ball providing total corrosion resistance to strong acids, chlorine, and bromine.',
-      },
-      {
-        title: 'Multi-Port Ball Valve (3-Way / 4-Way)',
-        desc: 'L-port and T-port multi-way ball valves for streamlined flow diversion, blending, and bypass routing.',
-      },
-      {
-        title: 'V-Notch Ball Valve',
+        title: 'Segment Ball / V-Notch Ball Valve',
         desc: 'Contoured 30°, 60°, or 90° V-port ball providing equal percentage flow control and shearing action for fibrous slurry.',
       },
       {
-        title: 'Wafer & Welded Ball Valves',
-        desc: 'Short face-to-face wafer patterns and fully welded pipeline ball valves for buried underground gas distribution.',
+        title: 'Cryogenic Ball Valve',
+        desc: 'BS 6364 extended bonnet design with drip collar for cryogenic LNG, liquid nitrogen, and liquid oxygen service down to -196°C.',
+      },
+      {
+        title: 'Ceramic Ball Valve',
+        desc: 'Ultra-hard structural zirconia ceramic wetted parts (HRA 88–92) for extreme erosion, catalyst, and fly ash slurry.',
+      },
+      {
+        title: 'PFA / PTFE Lined Ball Valve',
+        desc: 'Virgin PFA fluoropolymer lined body and ball providing total corrosion resistance to strong acids, 100% spark tested at 20kV.',
+      },
+      {
+        title: 'Multi-Port Ball Valve (3-Way / 4-Way)',
+        desc: 'True 4-seated L-port and T-port multi-way ball valves for streamlined flow diversion, blending, and bypass routing.',
       },
     ],
   },
@@ -499,7 +499,7 @@ export const productCategories: ProductItem[] = [
     slug: 'control-valve',
     tagline: 'Accurate flow, pressure, temperature, and level regulation',
     description:
-      'ALIS Valves is a trusted manufacturer and supplier of high-performance control valves designed for accurate flow, pressure, temperature, and level regulation in critical industrial processes. Available in globe, angle, 3-way, and lined configurations paired with smart digital positioners.',
+      'Valve Bridge is a trusted supplier of high-performance control valves designed for accurate flow, pressure, temperature, and level regulation in critical industrial processes. Available in globe, angle, 3-way, and lined configurations paired with smart digital positioners.',
     image: '/assets/products/control-valve.png',
     sourceUrl: 'https://alisvalves.com/product-category/control-valve/',
     standards: ['IEC 60534', 'ASME B16.34', 'ISA 75.01', 'FCI 70-2 Leakage Class IV / V / VI', 'EN 1349'],
