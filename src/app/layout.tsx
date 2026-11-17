@@ -22,7 +22,14 @@ export const metadata: Metadata = {
   title: 'Valve Bridge — Source Industrial Valves from China, Without Risk',
   description: 'Valve Bridge helps industrial buyers, EPC contractors and OEMs source industrial valves from verified Chinese manufacturers with end-to-end quality control and logistics.',
   icons: {
-    icon: '/favicon.png',
+    icon: [
+      { url: '/assets/aistudio/fevicon_ed186aae.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    shortcut: '/assets/aistudio/fevicon_ed186aae.png',
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
 };
 
