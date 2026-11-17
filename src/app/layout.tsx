@@ -23,15 +23,15 @@ export const metadata: Metadata = {
   description: 'Valve Bridge helps industrial buyers, EPC contractors and OEMs source industrial valves from verified Chinese manufacturers with end-to-end quality control and logistics.',
   icons: {
     icon: [
-      { url: '/favicon.png?v=7', type: 'image/png', sizes: '512x512' },
-      { url: '/favicon-192x192.png?v=7', type: 'image/png', sizes: '192x192' },
-      { url: '/favicon-512x512.png?v=7', type: 'image/png', sizes: '512x512' },
-      { url: '/favicon-32x32.png?v=7', type: 'image/png', sizes: '32x32' },
-      { url: '/favicon.ico?v=7', sizes: 'any' },
+      { url: '/favicon.png?v=8', type: 'image/png', sizes: '512x512' },
+      { url: '/favicon-192x192.png?v=8', type: 'image/png', sizes: '192x192' },
+      { url: '/favicon-512x512.png?v=8', type: 'image/png', sizes: '512x512' },
+      { url: '/favicon-32x32.png?v=8', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon.ico?v=8', sizes: 'any' },
     ],
-    shortcut: '/favicon.png?v=7',
+    shortcut: '/favicon.png?v=8',
     apple: [
-      { url: '/apple-touch-icon.png?v=7', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-touch-icon.png?v=8', sizes: '180x180', type: 'image/png' },
     ],
   },
   manifest: '/site.webmanifest',
