@@ -229,31 +229,27 @@ export const Logo: React.FC<LogoProps> = ({
             </motion.g>
 
             {/* 4. RIGHT-SIDE VERTICAL BLUE LINE with smooth drawing/extension effect */}
-            <motion.g
-              style={{ transformOrigin: '4052.9px 1952.75px' }}
-              initial={{ scaleY: 1 }}
+            <motion.line
+              x1="4052.9"
+              y1="1952.75"
+              x2="4052.9"
+              y2="3047.24"
+              stroke={primaryColor}
+              strokeWidth="40.57"
+              strokeLinecap="square"
+              initial={{ pathLength: 1 }}
               animate={
                 shouldAnimate
                   ? isHovered
-                    ? { scaleY: [0.25, 1] }
-                    : { scaleY: 1 }
-                  : { scaleY: 1 }
+                    ? { pathLength: [0.25, 1] }
+                    : { pathLength: 1 }
+                  : { pathLength: 1 }
               }
               transition={{
                 duration: 0.55,
                 ease: [0.16, 1, 0.3, 1],
               }}
-            >
-              <line
-                x1="4052.9"
-                y1="1952.75"
-                x2="4052.9"
-                y2="3047.24"
-                stroke={primaryColor}
-                strokeWidth="40.57"
-                strokeLinecap="square"
-              />
-            </motion.g>
+            />
           </g>
         </svg>
       </motion.div>

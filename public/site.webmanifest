@@ -3,12 +3,12 @@
   "short_name": "Valve Bridge",
   "icons": [
     {
-      "src": "/favicon-192x192.png?v=3",
-      "sizes": "192x192",
+      "src": "/assets/aistudio/favicon_ed186aae.png",
+      "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "/apple-touch-icon.png?v=3",
+      "src": "/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     }
