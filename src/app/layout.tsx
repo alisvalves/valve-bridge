@@ -23,13 +23,14 @@ export const metadata: Metadata = {
   description: 'Valve Bridge helps industrial buyers, EPC contractors and OEMs source industrial valves from verified Chinese manufacturers with end-to-end quality control and logistics.',
   icons: {
     icon: [
-      { url: '/assets/aistudio/favicon_ed186aae.png', type: 'image/png', sizes: '32x32' },
-      { url: '/favicon.png', type: 'image/png', sizes: '32x32' },
-      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-32x32.png?v=5', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon.png?v=5', type: 'image/png', sizes: '64x64' },
+      { url: '/favicon-192x192.png?v=5', type: 'image/png', sizes: '192x192' },
+      { url: '/favicon.ico?v=5', sizes: 'any' },
     ],
-    shortcut: '/assets/aistudio/favicon_ed186aae.png',
+    shortcut: '/favicon.png?v=5',
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-touch-icon.png?v=5', sizes: '180x180', type: 'image/png' },
     ],
   },
   manifest: '/site.webmanifest',
