@@ -1,0 +1,19 @@
+{
+  "name": "Valve Bridge",
+  "short_name": "Valve Bridge",
+  "icons": [
+    {
+      "src": "/assets/aistudio/favicon_ed186aae.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
