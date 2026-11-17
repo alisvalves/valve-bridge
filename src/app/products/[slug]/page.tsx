@@ -6,6 +6,7 @@ import ActuatorModelShowcase from '@/components/products/ActuatorModelShowcase';
 import ActuatorCategoryExperience from '@/components/products/ActuatorCategoryExperience';
 import BallValvesCategoryExperience from '@/components/products/BallValvesCategoryExperience';
 import ButterflyValvesCategoryExperience from '@/components/products/ButterflyValvesCategoryExperience';
+import ControlValvesCategoryExperience from '@/components/products/ControlValvesCategoryExperience';
 import {
   ArrowLeft,
   ArrowRight,
@@ -48,6 +49,9 @@ export async function generateMetadata({ params }: Props) {
   } else if (params.slug === 'butterfly-valves') {
     title = 'Industrial Butterfly Valves | Concentric, Flanged, Lugged & Ceramic (12 Models) | Valve Bridge';
     description = 'Complete range of 12 industrial butterfly valves: concentric wafer, full lug, double flanged, UPVC, spherical powder disc, and extreme abrasion ceramic valves.';
+  } else if (params.slug === 'control-valve') {
+    title = 'Industrial Control Valves | Globe, Lined, Angle Seat & Motorized (25 Models) | Valve Bridge';
+    description = 'Complete range of 25 industrial control valves: cage-guided globe, single seated, PTFE/PFA lined, Y-type, angle seat, 3-way diaphragm, and high-pressure/temperature valves.';
   } else if (product) {
     title = `${product.name} Sourcing & Automation from China | Valve Bridge`;
     description = `${product.tagline}. Direct mill pricing, international standards, and 100% pre-shipment inspection for ${product.name}.`;
@@ -82,6 +86,11 @@ export default function ProductDetailPage({ params }: Props) {
   // When accessing Butterfly Valves category, render the dedicated 12-model category experience
   if (product.slug === 'butterfly-valves') {
     return <ButterflyValvesCategoryExperience product={product} initialModelId={initialModelId} />;
+  }
+
+  // When accessing Control Valve category, render the dedicated 12-model category experience
+  if (product.slug === 'control-valve') {
+    return <ControlValvesCategoryExperience product={product} initialModelId={initialModelId} />;
   }
 
   const hasDetailedModels = Boolean(product.models && product.models.length > 0);

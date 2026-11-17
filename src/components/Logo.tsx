@@ -46,13 +46,12 @@ export const Logo: React.FC<LogoProps> = ({
   const [isFinePointer, setIsFinePointer] = useState(false);
 
   useEffect(() => {
-    if (!isInteractive) return;
-    const mq = window.matchMedia('(hover: hover) and (pointer: fine)');
-    setIsFinePointer(mq.matches);
-    const handler = (e: MediaQueryListEvent) => setIsFinePointer(e.matches);
-    mq.addEventListener('change', handler);
-    return () => mq.removeEventListener('change', handler);
-  }, [isInteractive]);
+    const media = window.matchMedia('(hover: hover) and (pointer: fine)');
+    setIsFinePointer(media.matches);
+    const listener = (e: MediaQueryListEvent) => setIsFinePointer(e.matches);
+    media.addEventListener('change', listener);
+    return () => media.removeEventListener('change', listener);
+  }, []);
 
   const shouldAnimate = isInteractive && isFinePointer && !prefersReducedMotion;
 
@@ -71,9 +70,9 @@ export const Logo: React.FC<LogoProps> = ({
     const deltaX = (e.clientX - centerX) / (rect.width / 2);
     const deltaY = (e.clientY - centerY) / (rect.height / 2);
 
-    // Controlled magnetic displacement (max 3.2px X, 1.8px Y)
-    mouseX.set(Math.max(-3.2, Math.min(3.2, deltaX * 3.2)));
-    mouseY.set(Math.max(-1.8, Math.min(1.8, deltaY * 1.8)));
+    // Controlled magnetic displacement (max 3.5px X, 2px Y)
+    mouseX.set(Math.max(-3.5, Math.min(3.5, deltaX * 3.5)));
+    mouseY.set(Math.max(-2, Math.min(2, deltaY * 2)));
   };
 
   const handleMouseLeave = () => {
@@ -108,7 +107,7 @@ export const Logo: React.FC<LogoProps> = ({
         animate={
           shouldAnimate
             ? isHovered
-              ? { scale: 1.032 }
+              ? { scale: 1.02 }
               : { scale: 1 }
             : { scale: 1 }
         }
@@ -150,9 +149,9 @@ export const Logo: React.FC<LogoProps> = ({
               gradientTransform="rotate(22)"
             >
               <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0" />
-              <stop offset="35%" stopColor="#FFFFFF" stopOpacity="0.04" />
-              <stop offset="50%" stopColor="#FFFFFF" stopOpacity="0.80" />
-              <stop offset="65%" stopColor="#FFFFFF" stopOpacity="0.04" />
+              <stop offset="35%" stopColor="#FFFFFF" stopOpacity="0.06" />
+              <stop offset="50%" stopColor="#FFFFFF" stopOpacity="0.85" />
+              <stop offset="65%" stopColor="#FFFFFF" stopOpacity="0.06" />
               <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0" />
             </linearGradient>
           </defs>
@@ -167,7 +166,7 @@ export const Logo: React.FC<LogoProps> = ({
                 shouldAnimate
                   ? {
                       filter: isHovered
-                        ? 'drop-shadow(0px 3px 5px rgba(0, 0, 102, 0.18))'
+                        ? 'drop-shadow(0px 2px 3px rgba(0, 0, 102, 0.14))'
                         : 'drop-shadow(0px 0px 0px rgba(0, 0, 102, 0))',
                       transition: 'filter 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
                     }
@@ -180,7 +179,6 @@ export const Logo: React.FC<LogoProps> = ({
               <g mask={`url(#${valveMaskId})`}>
                 <motion.rect
                   key={sweepKey}
-                  x="0"
                   y="1800"
                   width="1200"
                   height="1200"
@@ -201,7 +199,7 @@ export const Logo: React.FC<LogoProps> = ({
               animate={
                 shouldAnimate
                   ? isHovered
-                    ? { y: -38 }
+                    ? { y: -28 }
                     : { y: 0 }
                   : { y: 0 }
               }
@@ -220,7 +218,7 @@ export const Logo: React.FC<LogoProps> = ({
                   shouldAnimate
                     ? {
                         filter: isHovered
-                          ? 'drop-shadow(0px 2px 7px rgba(255, 102, 0, 0.36)) brightness(1.05)'
+                          ? 'drop-shadow(0px 1px 4px rgba(255, 102, 0, 0.28)) brightness(1.04)'
                           : 'drop-shadow(0px 0px 0px rgba(255, 102, 0, 0)) brightness(1)',
                         transition:
                           'filter 0.35s cubic-bezier(0.16, 1, 0.3, 1), fill 0.35s ease',
