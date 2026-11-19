@@ -550,7 +550,7 @@ export const productCategories: ProductItem[] = [
     slug: 'ggc-valves',
     tagline: 'Dependable shut-off, precise regulation, and non-return protection',
     description:
-      'GGC Valves designed to deliver dependable shut-off, precise flow control, and effective non-return protection in demanding industrial process applications. Covering Gate Valves (API 600/602), Globe Valves (BS 1873), Check Valves (BS 1868), and Knife Edge Gate Valves.',
+      'GGC Valves designed to deliver dependable shut-off, precise flow control, and effective non-return protection in demanding industrial process applications. Covering 30 industrial configurations across Gate Valves (API 600/602), Globe Valves (BS 1873), Check Valves (BS 1868), Knife Edge Gate Valves, and Pipeline Strainers.',
     image: '/assets/products/ggc-valves.png',
     sourceUrl: 'https://alisvalves.com/product-category/ggc-valves/',
     standards: ['API 600', 'API 602', 'API 603', 'API 594', 'BS 1873', 'BS 1868', 'ASME B16.34', 'MSS SP-81'],
